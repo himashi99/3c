@@ -6,8 +6,52 @@
   display: none;
 }
 
-.main-container {
-  height: 100vh;
+.site-header {
+  @include flex-center;
+}
+
+.landing-page-section {
   width: 100%;
+  height: 100vh;
+}
+
+.hero-container, .consulting-container, .our-work-container, .contact-container {
   background-color: thistle;
+}
+
+.our-work-logo-section {
+  background-color: green;
+  width: 100%;
+  height: 12em;
+}
+
+.our-work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  .our-work-view-more {
+    width: 25em;
+    height: 25em;
+    background-color: teal;
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+footer {
+  background-color: #414042;
+  color: #fff;
+  height: 17em;
+
+  .footer-container {
+    display: flex;
+  }
+
+  .copywrite {
+    text-align: center;
+  }
 }

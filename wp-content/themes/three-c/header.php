@@ -25,7 +25,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'three-c' ); ?></a>
 
 	<header id="masthead" class="site-header">
-
+		<div class="logo-container">
+			<img src="http://localhost:8888/wp-content/uploads/2018/11/logo.png">
+		</div>
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'three-c' ); ?></button>
