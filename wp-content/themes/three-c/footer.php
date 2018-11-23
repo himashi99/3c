@@ -21,10 +21,10 @@
 			<div class="site-map">
 				<ul>
 					<li><p class="footer-title">Site Map</p></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Stayahead</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a id="footer-home-button" href="#">Home</a></li>
+					<li><a id="footer-work-button" href="#">Work</a></li>
+					<li><a id="footer-stayahead-button" href="#">Stayahead</a></li>
+					<li><a id="footer-contact-button" href="#">Contact</a></li>
 			</ul>
 			</div>
 			<div class="visit">

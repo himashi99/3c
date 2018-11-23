@@ -163,9 +163,9 @@
   }
 }
 
-.consulting-container {
-  background-color: thistle;
-}
+// .consulting-container {
+//   background-color: thistle;
+// }
 
 .our-work-container {
   // background-color: #003B4A;
@@ -301,8 +301,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3em;
-  height: auto;
+  padding: 2em;
+  height: calc(100vh - 92.672px);
   // calc(100vh - 9em);
 
   .contact-container-contents {
@@ -353,6 +353,18 @@
   }
 }
 
+.wpcf7-response-output {
+  margin: 0 !important;
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 0.7em !important;
+}
+
+.basic-contact-info .wpcf7-not-valid-tip  {
+  padding-top: 0.5em !important;
+}
+
 footer {
   background-color: #414042;
   color: #fff;
@@ -361,6 +373,7 @@ footer {
 
   .footer-container {
     display: flex;
+    justify-content: center;;
     height: 100%;
     // padding-left: 10em;
     // padding-top: 2em;
@@ -380,9 +393,22 @@ footer {
         color: #fff;
       }
     }
+
+    div:nth-child(2) ul {
+      width: 9em;
+    }
+
+    div:nth-child(4) ul {
+      width: 11em;
+    }
+
+    div:nth-child(5) ul {
+      width: 8em;
+    }
   }
 
   .copywrite {
-    text-align: left;
+    display: flex;
+    justify-content: center;
   }
 }

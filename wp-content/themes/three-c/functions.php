@@ -140,6 +140,15 @@ wp_enqueue_script('three-c-scroll', get_stylesheet_directory_uri() . '/js/on-scr
 }
 add_action( 'wp_enqueue_scripts', 'three_c_scripts' );
 
+function wpb_add_google_fonts() {
+
+wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', false );
+}
+
+add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
+
+
 /**
  * Implement the Custom Header feature.
  */

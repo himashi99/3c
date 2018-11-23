@@ -104,3 +104,29 @@
 		}
 	}( container ) );
 } )();
+
+// Smooth scrolling
+jQuery(document).ready(function( $ ) {
+
+	// home button
+	$('#menu-item-54, #footer-home-button').click(function(event){
+  	$('body, html').animate({scrollTop: 0}, 700);
+		event.preventDefault();
+  });
+
+	// work button
+	$("#menu-item-38, #footer-work-button").click(function(event) {
+  	var position = $(".our-work-container").offset().top; //calculates how far the top of the Work section is from the top of the page
+			var positionWithNav = position - 93.469; // calculation to include the sticky nav
+      	$('body, html').animate({ scrollTop: positionWithNav }, 700);
+				event.preventDefault();
+		});
+
+		// contact button
+		$("#menu-item-40, #footer-contact-button").click(function(event) {
+	  	var position = $(".contact-container").offset().top; //calculates how far the top of the Contact section is from the top of the page
+				var positionWithNav = position - 93.469 - 32; // calculation to include the sticky nav and padding on the div
+	      	$('body, html').animate({ scrollTop: positionWithNav }, 700);
+					event.preventDefault();
+			});
+});

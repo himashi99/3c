@@ -449,9 +449,6 @@ template {
     .three-c .three-c-description h3 {
       font-size: 2em; }
 
-.consulting-container {
-  background-color: thistle; }
-
 .our-work-container {
   height: calc(100vh - 93.469px); }
   .our-work-container h2 {
@@ -547,8 +544,8 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3em;
-  height: auto; }
+  padding: 2em;
+  height: calc(100vh - 92.672px); }
   .contact-container .contact-container-contents {
     width: 100%;
     height: 100%; }
@@ -581,6 +578,15 @@ template {
   .form-container .wpcf7-list-item {
     margin-left: 0; }
 
+.wpcf7-response-output {
+  margin: 0 !important; }
+
+.wpcf7-not-valid-tip {
+  font-size: 0.7em !important; }
+
+.basic-contact-info .wpcf7-not-valid-tip {
+  padding-top: 0.5em !important; }
+
 footer {
   background-color: #414042;
   color: #fff;
@@ -588,6 +594,7 @@ footer {
   padding: 2em 10em 2em 10em; }
   footer .footer-container {
     display: flex;
+    justify-content: center;
     height: 100%; }
     footer .footer-container ul {
       list-style: none;
@@ -599,8 +606,15 @@ footer {
       footer .footer-container ul a {
         text-decoration: none;
         color: #fff; }
+    footer .footer-container div:nth-child(2) ul {
+      width: 9em; }
+    footer .footer-container div:nth-child(4) ul {
+      width: 11em; }
+    footer .footer-container div:nth-child(5) ul {
+      width: 8em; }
   footer .copywrite {
-    text-align: left; }
+    display: flex;
+    justify-content: center; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -618,16 +632,38 @@ textarea {
   line-height: 1.5; }
 
 @font-face {
-  font-family: Avenir;
-  src: url("http://localhost:8888//wp-content/themes/three-c/fonts/Avenir-Next.ttc") format("truetype"), url("http://yoursite.com/wp-content/themes/yourtheme/fonts/Lato-Italic.ttf") format("truetype"), url("http://yoursite.com/wp-content/themes/yourtheme/fonts/Lato-Light.ttf") format("truetype"); }
-@font-face {
-  font-family: Lora;
-  src: url("http://localhost:8888//wp-content/themes/three-c/fonts/Lora-Bold.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/Lora-BoldItalic.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/Lora-Italic.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/Lora-Regular.ttf") format("truetype"); }
+  font-family: Nunito;
+  src: url("../../fonts/NunitoSans-ExtraLight.WOFF") format("WOFF");
+  font-weight: 200;
+  font-style: normal; }
 @font-face {
   font-family: Nunito;
-  src: url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-Black.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-BlackItalic.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-Bold.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-BoldItalic.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-ExtraBold.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-ExtraBoldItalic.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-ExtraLight.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-ExtraLightItalic.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-Italic") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-Light.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-LightItalic.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-Regular.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-SemiBold.ttf") format("truetype"), url("http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-SemiBoldItalic.ttf") format("truetype"); }
+  src: url("../../fonts/NunitoSans-Light.WOFF") format("WOFF");
+  font-weight: lighter;
+  font-style: normal; }
+@font-face {
+  font-family: Nunito;
+  src: url("../../fonts/NunitoSans-Regular.WOFF") format("WOFF");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Nunito;
+  src: url("../../fonts/NunitoSans-Bold.WOFF") format("WOFF");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: Nunito;
+  src: url("../../fonts/NunitoSans-ExtraBold.WOFF") format("WOFF");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: Lora;
+  src: url("../../fonts/Lora-Regular.WOFF") format("WOFF");
+  font-weight: normal;
+  font-style: normal; }
 .main-navigation {
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  font-family: "Nunito", sans-serif; }
 
 .work-slider-container {
   font-size: 2em;
@@ -668,10 +704,12 @@ textarea {
   font-weight: 200;
   font-size: 0.9em; }
   .footer-container .footer-title {
-    font-weight: 500;
+    font-weight: normal;
     text-transform: uppercase; }
   .footer-container .site-map a {
     text-transform: uppercase; }
+  .footer-container a:hover {
+    font-weight: 400; }
 
 .copywrite p {
   margin: 0;
@@ -910,7 +948,8 @@ ul {
     margin-left: 1em;
     text-align: center; }
     ul .connect-button a {
-      color: #003B4A; }
+      color: #003B4A;
+      padding-top: 0.1em; }
 
 a:hover, a:active {
   color: slategray;
@@ -1139,5 +1178,12 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Responsive - Media Queries
+--------------------------------------------------------------*/
+@media (max-height: 700px) and (min-width: 580px) {
+  .landing-page-section {
+    height: auto; } }
 
 /*# sourceMappingURL=style.css.map */
