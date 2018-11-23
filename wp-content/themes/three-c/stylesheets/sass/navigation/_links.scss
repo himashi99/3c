@@ -1,19 +1,102 @@
-a {
-	color: $color__link;
+.main-navigation a {
+	color: darkgray;
+  text-decoration: none; /* no underline */
+	text-transform: uppercase;
+}
 
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
+// disable link on "·" on navigation menu
+.main-navigation li:nth-of-type(2) a {
+	pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
+.main-navigation li:nth-of-type(4) a {
+	pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
+ul {
+	align-items: baseline;
+
+	.connect-button {
+		border-radius: 1.56em;
+		border: 0.125em solid #003B4A;
+		padding: 0.625em;
+		width: 7.5em;
+		margin-left: 1em;
+		text-align: center;
+
+		a {
+			color: #003B4A;
+		}
 	}
 }
+
+a:hover, a:active {
+	color: slategray;
+	text-decoration: underline;
+}
+
+// underline removed fro Connect button
+li:last-child a:hover, li:last-child a:active {
+	text-decoration: none;
+}
+
+.connect-button:hover, .connect-button:active{
+	background-color: #003B4A;
+
+	a {
+		color: #fff;
+	}
+}
+
+// this class is removed from header upon scroll
+.white-header {
+	background-color: #fff;
+}
+
+// this class is added to header on scroll
+.gray-header {
+	background-color: gainsboro;
+}
+
+// a:visited {
+// 	color: purple;
+// }
+//
+// a:hover, a:focus, a:active {
+// 	color: midnightblue;
+// }
+//
+// a:focus {
+// 	outline: thin dotted;
+// }
+//
+// a:hover, a:active {
+// 	outline: 0;
+// }
+
+
+
+
+
+// a {
+//
+// 	&:visited {
+// 		color: $color__link-visited;
+// 	}
+// 	&:hover,
+// 	&:focus,
+// 	&:active {
+// 		color: $color__link-hover;
+// 	}
+// 	&:focus {
+// 		outline: thin dotted;
+// 	}
+// 	&:hover,
+// 	&:active {
+// 		outline: 0;
+// 	}
+// }

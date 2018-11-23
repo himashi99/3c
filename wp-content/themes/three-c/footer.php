@@ -19,23 +19,38 @@
 				<img src="http://localhost:8888/wp-content/uploads/2018/11/logo.png">
 			</div>
 			<div class="site-map">
-				<a href="#">Home</a>
-				<a href="#">Work</a>
-				<a href="#">Stayahead</a>
-				<a href="#">Contact</a>
+				<ul>
+					<li><p class="footer-title">Site Map</p></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Stayahead</a></li>
+					<li><a href="#">Contact</a></li>
+			</ul>
 			</div>
 			<div class="visit">
-				<p>7 Fraser Ave, Suite 12 <br> Toronto, ON M6K 1Y</p>
+				<ul>
+					<li><p class="footer-title">Visit</p></li>
+					<li><p>7 Fraser Ave, Suite 12 <br> Toronto, ON M6K 1Y</p></li>
+				</ul>
 			</div>
 			<div class="connect">
-				<p>info@thisis3c.com</p>
+				<ul>
+					<li><p class="footer-title">Connect</p></li>
+					<li><p><a href="mailto:info@thisis3c.com">info@thisis3c.com</a></p></li>
+				</ul>
 			</div>
 			<div class="follow">
-				<a href="https://www.linkedin.com/company/3c_/about/">Linkedin</a>
-				<a href="https://www.instagram.com/thisis3c/?hl=en">Instagram</a>
+				<ul>
+					<li><p class="footer-title">Follow</p></li>
+					<li><a href="https://www.linkedin.com/company/3c_/about/">Linkedin</a></li>
+					<li><a href="https://www.instagram.com/thisis3c/?hl=en">Instagram</a></li>
+				</ul>
 			</div>
 			<div class="stayahead">
-				<p>Stay up to date on....</p>
+				<ul>
+					<li><p class="footer-title">Stayahead</p></li>
+					<li><p>Stay up to date on....</p></li>
+				</ul>
 			</div>
 		</div> <!-- footer-container -->
 		<div class="copywrite">

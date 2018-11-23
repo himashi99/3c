@@ -613,25 +613,7 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-	color: royalblue;
-}
 
-a:visited {
-	color: purple;
-}
-
-a:hover, a:focus, a:active {
-	color: midnightblue;
-}
-
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover, a:active {
-	outline: 0;
-}
 
 /*--------------------------------------------------------------
 ## Menus
@@ -639,7 +621,6 @@ a:hover, a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
 }
 

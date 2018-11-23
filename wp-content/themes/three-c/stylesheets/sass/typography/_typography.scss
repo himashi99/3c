@@ -10,6 +10,165 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+@font-face {
+ font-family: Avenir;
+ src: url('http://localhost:8888//wp-content/themes/three-c/fonts/Avenir-Next.ttc') format('truetype'),
+ url('http://yoursite.com/wp-content/themes/yourtheme/fonts/Lato-Italic.ttf') format('truetype'),
+ url('http://yoursite.com/wp-content/themes/yourtheme/fonts/Lato-Light.ttf') format('truetype');
+}
+
+ @font-face {
+  font-family: Lora;
+  src: url('http://localhost:8888//wp-content/themes/three-c/fonts/Lora-Bold.ttf') format('truetype'),
+  url('http://localhost:8888//wp-content/themes/three-c/fonts/Lora-BoldItalic.ttf') format('truetype'),
+  url('http://localhost:8888//wp-content/themes/three-c/fonts/Lora-Italic.ttf') format('truetype'),
+	url('http://localhost:8888//wp-content/themes/three-c/fonts/Lora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: Nunito;
+ src: url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-Black.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-BlackItalic.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-Bold.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-BoldItalic.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-ExtraBold.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-ExtraBoldItalic.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-ExtraLight.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-ExtraLightItalic.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-Italic') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-Light.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-LightItalic.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-Regular.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-SemiBold.ttf') format('truetype'),
+ url('http://localhost:8888//wp-content/themes/three-c/fonts/NunitoSans-SemiBoldItalic.ttf') format('truetype');
+}
+
+// @font-face {
+//     font-family: Avenir;
+//     src: url("../../../fonts/Avenir Next.ttc"),
+// 				url("../../../fonts/Avenir Next 2.ttc"),
+// 				url("../../../fonts/Avenir Next 3.ttc"),
+// 				url("../../../fonts/Avenir Next 4.ttc");
+// }
+//
+// @font-face {
+//     font-family: Lora;
+//     src: url("../../../fonts/Lora-Regular.ttf"),
+// 				url("../../../fonts/Lora-Regular 2.ttf"),
+// 				url("../../../fonts/Lora-Regular 3.ttf"),
+//
+// 				url("../../../fonts/Lora-Bold.ttf"),
+// 				url("../../../fonts/Lora-Bold 2.ttf"),
+// 				url("../../../fonts/Lora-Bold 3.ttf"),
+//
+// 				url("../../../fonts/Lora-Italic.ttf"),
+// 				url("../../../fonts/Lora-Italic 2.ttf"),
+// 				url("../../../fonts/Lora-Italic 3.ttf"),
+//
+// 				url("../../../fonts/Lora-BoldItalic.ttf"),
+// 				url("../../../fonts/Lora-BoldItalic 2.ttf");
+// }
+//
+// @font-face {
+//     font-family: Nunito;
+//     src: url("../../../fonts/NunitoSans-Regular.ttf"),
+// 				url("../../../fonts/NunitoSans-Light.ttf"),
+// 				url("../../../fonts/NunitoSans-ExtraLight"),
+// 				url("../../../fonts/NunitoSans-LightItalic.ttf"),
+// 				url("../../../fonts/NunitoSans-ExtraLightItalic"),
+//
+// 				url("../../../fonts/NunitoSans-Italic.ttf"),
+//
+// 				url("../../../fonts/NunitoSans-Bold"),
+// 				url("../../../fonts/NunitoSans-SemiBold"),
+// 				url("../../../fonts/NunitoSans-Black"),
+// 				url("../../../fonts/NunitoSans-ExtraBold"),
+//
+// 				url("../../../fonts/NunitoSans-BoldItalic.ttf"),
+// 				url("../../../fonts/NunitoSans-SemiBoldItalic.ttf"),
+// 				url("../../../fonts/NunitoSans-ExtraBoldItalic.ttf"),
+// 				url("../../../fonts/NunitoSans-BlackItalic");
+// }
+
+
+
+.main-navigation {
+	font-size: 0.8em;
+}
+
+.work-slider-container {
+	font-size: 2em;
+	line-height: 1.1em;
+}
+
+.landing-page-contents {
+	font-family: "Nunito", sans-serif;
+
+	.intro-description-text {
+		font-weight: lighter;
+	}
+}
+
+.three-c-description h3 {
+	font-family: "Nunito", sans-serif;
+	font-weight: bold;
+}
+
+.three-c-description p {
+	font-family: "Lora", serif;
+}
+
+.contact-form-container {
+	color: black;
+
+	.wpcf7-form-control {
+		border-color: black;
+		width: 408.8px;
+		height: 2.5em;
+		font-size: 0.8em;
+	}
+
+	.wpcf7-response-output {
+		margin-left: 0;
+		border-color: red;
+	}
+
+	.bold-ahead {
+		font-weight: bold;
+	}
+
+	.green-terms {
+		color: #003B4A;
+		font-weight: bold;
+	}
+
+	#required-fields-text {
+		font-size: 0.8em;
+	}
+}
+
+.footer-container {
+	font-family: "Nunito", sans-serif;
+	font-weight: 200;
+	font-size: 0.9em;
+
+	.footer-title {
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.site-map a {
+		text-transform: uppercase;
+	}
+}
+
+.copywrite p {
+	margin: 0;
+	font-size: 0.7em;
+	color: gray;
+}
+
+
 @import "headings";
 
 @import "copy";

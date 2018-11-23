@@ -20,3 +20,43 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+
+.work-slider-container {
+	p button {
+		border-radius: 1em;
+		border: 0.125em solid #003B4A;
+		padding: 0.625em;
+		width: 7.5em;
+		text-align: center;
+		background-color: #fff;
+		height: 2.8em;
+		font-size: 0.4em;
+		cursor: pointer;
+	}
+}
+
+.work-slider-container {
+	p button:hover, .p button:active {
+		background-color: #003B4A;
+		color: #fff;
+	}
+}
+
+// submit button for form
+.wpcf7-submit {
+	border-radius: 1.56em !important;
+	border: 0.125em solid #003B4A !important;
+	padding: 0.625em !important;
+	width: 7.5em !important;
+	text-align: center !important;
+	background-color: #fff !important;
+	cursor: pointer;
+
+.wpcf7-submit:hover {
+	background-color: red !important;
+	color: #fff !important;
+}
+	// a {
+	// 	color: #003B4A;
+	// }
+}
